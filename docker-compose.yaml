@@ -3,6 +3,8 @@ services:
     image: defnvary/beermapping:latest
     ports:
       - 8080:8080
+    labels:
+      - "com.centurylinklabs.watchtower.enable: true"
   watchtower:
     image: containrrr/watchtower
     environment:
